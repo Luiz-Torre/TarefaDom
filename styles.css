@@ -1,16 +1,35 @@
-.comentario_unico {
+.comentario_tudo  {
     background-color: yellow;
     margin-bottom: 30px;
 }
 
 
-.separador_dentro{
-    background-color: blue;
-    width: 100vw;
-    height: 10px;
+.topo_comentario {
+    display: flex;
+    justify-content: space-between;
 }
+.nome_comentario{
+    background-color: blue;
+    color: chartreuse;
+    
+}
+#apagar_comentario{
+    background: url("https://cdn.icon-icons.com/icons2/390/PNG/512/trash-can_38501.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
 
+}
 .sessao_comentarios{
     position: relative;
     left: 45%;
 }
+
+.txt_comentario{
+    color: hotpink;
+    background-color: turquoise;
+}
+
