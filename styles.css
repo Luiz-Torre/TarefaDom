@@ -1,0 +1,16 @@
+.comentario_unico {
+    background-color: yellow;
+    margin-bottom: 30px;
+}
+
+
+.separador_dentro{
+    background-color: blue;
+    width: 100vw;
+    height: 10px;
+}
+
+.sessao_comentarios{
+    position: relative;
+    left: 45%;
+}

@@ -1,16 +1,29 @@
 
 function enviar() {
-var ass = document.createElement('div');
-var ass2 = document.createElement('div');
-ass.className = 'ass';
-ass2.className = 'ass2';
-
-ass.appendChild(document.createTextNode(document.querySelector('#nome').value));
-ass.appendChild(ass2)
-ass.appendChild(document.createTextNode(document.querySelector('#coment').value));
+var comentario_unico = document.createElement('div');
+var apagar_comentario = document.createElement('button');
+var separador_dentro = document.createElement('div');
+comentario_unico.className = 'comentario_unico';
+separador_dentro.className = 'separador_dentro';
+apagar_comentario.id = 'apagar_comentario';
 
 
-document.getElementById('com').appendChild(ass);
+comentario_unico.appendChild(document.createTextNode(document.querySelector('#nome').value));
+
+apagar_comentario.onclick = function  () {
+    removeLinha(this)
+};
+
+
+comentario_unico.appendChild(apagar_comentario)
+
+comentario_unico.appendChild(separador_dentro)
+
+
+comentario_unico.appendChild(document.createTextNode(document.querySelector('#coment').value));
+
+
+document.getElementById('com').appendChild(comentario_unico);
 
 }
 
@@ -19,4 +32,13 @@ function apagar(){
     while (list.hasChildNodes()) {
     list.removeChild(list.firstChild);
 }
+
+
 }
+
+
+function removeLinha(element){
+    var el = element.closest('div');
+    el.outerHTML = '';
+      }
+
