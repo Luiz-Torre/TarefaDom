@@ -1,4 +1,4 @@
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 1024px){
 
     body{
         font-family:'Roboto', sans-serif;
@@ -17,7 +17,7 @@
         padding-top: 0.8%   ;
         width: 250px;
         height: 100px;
-        display: flex;
+        display: flex;  
         margin-left: auto;
         margin-right: auto;
     }
@@ -26,6 +26,7 @@
     .topo_comentario {
         display: flex;
         justify-content: space-between;
+        margin-bottom: 8%;
     }
     .nome_comentario{
         position: relative;
@@ -83,6 +84,8 @@
     .sessao_comentarios{
         position: relative;
         left: 45%;
+        overflow: hidden;
+        width: 100vw;
     }
     
     .txt_comentario{
@@ -92,12 +95,13 @@
         left: 3%;
         background-color: transparent;
         word-wrap: break-word;
-        max-width: 94vw;
+        max-width: 91vw;
         height: auto;
         font-weight: 400;
         color : white;
         text-shadow: 2px 2px black;
         font-size: 20px;
+        margin-bottom: 3%;
     }
     
     
@@ -183,10 +187,12 @@
         justify-content: center;
     }
     
-    .section_timeline{
+    .sessao_timeline{
         display: flex;
         margin-left: auto;
-        margin-right: auto;
+        overflow-x: hidden;
+        position: relative;
+        left: 5%;
     }
     .sessao_comentarios{
         position: relative;
@@ -223,17 +229,20 @@
     
     #com{
         display: flex;
+        height: auto;
+        width: 96vw;
+        justify-content: left;
         margin-left: auto;
-        margin-right: auto;
         flex-direction: column;
-        height: 400px;
-        width: 550px;
+        overflow-x: hidden;
+       
     
     }
     
     .comentario_tudo{
+        
         background-color: #0066cc;
-        width: 100vw;
+        width: 96vw;
         height: auto;
         border-radius: 25px;
         margin-bottom: 5%;
@@ -243,6 +252,7 @@
     
     #nome_editar{
         resize: none;
+
         line-height: 1.5;
         font-size: 18px ;
         vertical-align: top;
