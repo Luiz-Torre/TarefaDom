@@ -2,46 +2,50 @@
 <head>
     <link rel="stylesheet" href="reset.css"> 
     <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="mobile.css"> 
+
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./script.js"></script> 
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
-    <title>Testes</title>
+    <title>Formulario com Javascript</title>
     
 </head>
-<body>
-    <header class="cabecalho"> 
-        <img class = "img_logo"src="./imgs/logo.svg" alt="Simples Ideias">
-    </header>
-   
+    <body>
+        <header class="cabecalho"> 
+            <img class = "img_logo"src="./imgs/logo.svg" alt="Simples Ideias">
+        </header>
+    
 
-    <section class = "topo_pagina">
-        <div class ="design">
-            <form id="myForm" >     
-                Envie uma mensagem:
-                <div class="form_nome">
+        <section class = "topo_pagina">
+            <div class ="design">
+                <form id="myForm" >     
+                    Envie uma mensagem:
+                    <div class="form_nome">
+                    
+                        <label>Nome:</label> &ensp;
+                        <input type="text" id="nome" ><br>
+                    </div>
                 
-                    <label>Nome:</label> &ensp;
-                    <input type="text" id="nome" ><br>
-                </div>
-            
-                <div class = "form_comentario">
-                    <label>Mensagem:</label>&ensp;
-                    <textarea id="coment" id="coment" maxlength="800"></textarea>
-                </div>
-                <input class ="botao_enviar"type="button" onclick = "enviar()" value="Enviar">
+                    <div class = "form_comentario">
+                        <label>Mensagem:</label>&ensp;
+                        <textarea id="coment" id="coment" maxlength="800"></textarea>
+                    </div>
+                    <input class ="botao_enviar"type="button" onclick = "enviar()" value="Enviar">
 
-            </form>
-        </div>
-    </section>
-    <div class="sessao_comentarios">TIMELINE<input class="limpar_all"type="button" onclick = "apagar()">
+                </form>
+            </div>
+        </section>
+        <section class="sessao_timeline">
+            <div class="sessao_comentarios">TIMELINE<input class="limpar_all"type="button" onclick = "apagar()">
 
-    </div>
+            </div>
+        </section>
         <div id = "com">
 
         </div>
-    
-</body>
+        
+    </body>
 </html>

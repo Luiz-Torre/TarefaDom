@@ -1,0 +1,298 @@
+@media only screen and (max-width: 767px){
+
+    body{
+        font-family:'Roboto', sans-serif;
+        background-color: #c5e7f3;
+        overflow-x: hidden;
+    }
+    
+    header{
+        background-color: #add8e6;
+        margin-bottom:50px ;
+        height: 120px;
+        border-bottom: 4px solid rgb(7, 130, 161);
+    }
+    
+    .img_logo{
+        padding-top: 0.8%   ;
+        width: 250px;
+        height: 100px;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    
+    .topo_comentario {
+        display: flex;
+        justify-content: space-between;
+    }
+    .nome_comentario{
+        position: relative;
+        top: 15px;
+        left: 3%;
+        font-weight: 900;
+        color : white;
+        text-shadow: 2px 2px black;
+        font-size: 30px;
+        
+    }
+    #apagar_comentario{
+        background: url("./imgs/lixeira.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        border: none;
+        height: 40px;
+        width: 40px;
+        position: relative;
+        bottom: -10%;
+        left: -15%;
+        cursor:pointer;
+    
+    }
+    
+    #editar_comentario{
+        background: url("https://image.flaticon.com/icons/png/512/66/66090.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        border: none;
+        height: 33px;
+        width: 33px;
+        position: relative;
+        bottom: -15%;
+        left: -15%;
+        cursor:pointer;
+    
+    }
+    
+    
+    .edit{
+        background-image: #0066cc;
+        height: auto;
+        position: relative;
+        bottom: -15%;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        color: white;
+        text-shadow: 2px 2px  rgba(0, 0, 0, 0.664);
+        margin-bottom: 40%;
+    }
+    
+    .sessao_comentarios{
+        position: relative;
+        left: 45%;
+    }
+    
+    .txt_comentario{
+        color: white;
+        position: relative;
+        bottom: -10%;
+        left: 3%;
+        background-color: transparent;
+        word-wrap: break-word;
+        max-width: 94vw;
+        height: auto;
+        font-weight: 400;
+        color : white;
+        text-shadow: 2px 2px black;
+        font-size: 20px;
+    }
+    
+    
+    #nome{
+        box-shadow: 0 0 0.5em rgb(32, 32, 32);  
+    
+    }
+    .botao_enviar{
+        
+        background-color:  #0066cc;
+        border-radius: 5px;
+        border:2px solid rgba(39, 38, 38, 0.829);
+        border: none;
+        color: white;
+        font-size: 20px;
+        height: 35px;
+        width: 110px;
+        text-shadow: 2px 1px black;
+        box-shadow: 0 0 0.5em rgba(51, 51, 51, 0.87);
+        position: relative;
+        font-weight: 300;
+        bottom: -10%;
+        right: -30%;
+    }
+    .botao_enviar:hover{
+        background-color: #5aa6f1ab;
+        transition: background-color .2s;
+    }
+    
+    #myForm{
+        position: relative;
+        top: 10%;
+        left: 10%;
+        
+    
+    }
+    
+    #coment{
+        resize: none;
+        line-height: 1.5;
+        font-size: 18px ;
+        vertical-align: top;
+        border-radius: 7px;
+        box-shadow: 0 0 0.5em rgb(32, 32, 32); 
+        height: 150px;
+        width: 600px;
+        max-width: 50%;
+    
+    
+    }
+    .form_nome{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    
+    }
+    
+    #nome{
+        font-size: 18px;
+        border-radius: 8px;
+        width: 220px;
+    
+    }
+    
+    .design{
+        position: relative;
+        background-color: #0066cc;
+        height: 400px;
+        max-width: 100vw;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        box-shadow: 0 0 3em rgb(132, 148, 236);  
+        font-weight: 700;
+        color : white;
+        text-shadow: 2px 2px black;
+        overflow-x: hidden;
+
+    }
+    
+    .topo_pagina{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .section_timeline{
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .sessao_comentarios{
+        position: relative;
+        left: 20%;
+        padding-top: 30px;
+        padding-bottom: 70px;
+        color: rgb(51,51,51);
+        font-weight: 700;
+        font-size: 30px;
+        background-color: transparent;
+        letter-spacing: 5px;
+        text-decoration: underline 3px;
+    }
+    
+    .limpar_all{
+        background: url("./imgs/lixeira.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        border: none;
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        top:18%;
+        cursor:pointer;
+    
+    }
+    label{
+        font-weight: 450;
+    
+    
+    }
+    
+    
+    #com{
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: column;
+        height: 400px;
+        width: 550px;
+    
+    }
+    
+    .comentario_tudo{
+        background-color: #0066cc;
+        width: 100vw;
+        height: auto;
+        border-radius: 25px;
+        margin-bottom: 5%;
+    }
+    
+    
+    
+    #nome_editar{
+        resize: none;
+        line-height: 1.5;
+        font-size: 18px ;
+        vertical-align: top;
+        border-radius: 7px;
+        box-shadow: 0 0 0.5em rgb(32, 32, 32); 
+    
+    }
+    
+    #coment_editar{
+        position: relative;
+        
+        resize: none;
+        line-height: 1.5;
+        font-size: 18px ;
+        vertical-align: top;
+        border-radius: 7px;
+        box-shadow: 0 0 0.5em rgb(32, 32, 32); 
+        height: 130px;
+        width: 600px;
+        max-width: 44%;
+    }
+    
+    .edita_nome_design{
+        position: relative;
+        left: 3%;
+    
+    }
+    .edita_comentario_design{
+        position: relative;
+        left: 3%;
+    
+    
+    }
+    
+    
+    .confirma_edita{
+        background: url("https://www.freeiconspng.com/thumbs/ok-icon/check-yes-ok-icon-10.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        border: none;
+        height: 40px;
+        width: 40px;
+        position: relative;
+        left: 45%;
+        height: 50px;
+        width:50px;
+        padding-bottom: 15px;
+        cursor:pointer;
+    
+    }
+
+}
